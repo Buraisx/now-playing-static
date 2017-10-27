@@ -242,7 +242,6 @@ figure {
 
     }
     .movie:first-child{
-      height:100%;
       width:100%;
     }
     .movie:first-child .movie-backdrop{
@@ -290,8 +289,26 @@ figure {
     .movie-overview{
       display:block;
     }
-  
-
-
-
+}
+@media(min-width:1300px)
+{
+  .movie:first-child{
+      width:25%;
+    }
+   .movie:first-child .movie-backdrop{
+      display:none;
+    }
+  .movie:first-child .movie-poster{
+      display:block;
+    }
+  .movie{
+    width:25%;
+    float:left;
+  }
+  .movie:first-child .movie-overview{
+      display:none;
+    }
+  .movie:hover .movie-overview{
+    display:block;
+  }
 }
